@@ -39,6 +39,9 @@ private:
 
     Snake *snake;
     bool isPause;
+
+signals:
+    void closeGameWindow();
 };
 
 #endif // GAMECONTROLLER_H

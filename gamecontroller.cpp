@@ -97,7 +97,7 @@ void GameController::gameOver()
         scene.addItem(snake);
         addNewFood();
     } else {
-        exit(0);
+        emit closeGameWindow();
     }
 }
 
@@ -124,3 +124,4 @@ bool GameController::eventFilter(QObject *object, QEvent *event)
         return QObject::eventFilter(object, event);
     }
 }
+

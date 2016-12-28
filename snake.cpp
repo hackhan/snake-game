@@ -9,7 +9,7 @@ static const qreal SNAKE_SIZE = TILE_SIZE;
 Snake::Snake(GameController &controller) :
     head(0, 0),
     growing(7),
-    speed(5),
+    speed(3),
     moveDirection(NoMove),
     controller(controller)
 {
